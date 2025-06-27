@@ -52,6 +52,7 @@ async def main():
                 })
 
                 try:
+                    
                     agent_response = await agent.ainvoke({"messages": messages})
                     
                     ai_message = agent_response["messages"][-1].content
