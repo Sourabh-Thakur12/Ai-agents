@@ -9,7 +9,7 @@ class CompanyAnalysis(BaseModel):
     description: str = ""
     api_available: Optional[bool] = None
     language_support: List[str] = []
-    integration_capablities = List[str] = []
+    integration_capablities : List[str] = []
 
 
 class CompanyInfo(BaseModel):
@@ -24,7 +24,7 @@ class CompanyInfo(BaseModel):
     api_available: Optional[bool] = None
     language_support: list[str] = []
     integration_capablities: List[str] = []
-    developer_experience_rating = Optional[str] = None
+    developer_experience_rating : Optional[str] = None
     
     
 class ResearchState(BaseModel):
